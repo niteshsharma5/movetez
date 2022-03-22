@@ -1,0 +1,303 @@
+@font-face {
+font-family: "Nexa";
+src: url("nexa.eot");
+src: url("nexa.ttf");
+src: url("nexa.woff") format("woff"),
+url("nexa.otf") format("opentype"),
+}
+
+@font-face {
+font-family: "Nexa Bold";
+src: url("nexa-bold.eot");
+src: url("nexa-bold.ttf");
+src: url("nexa-bold.woff") format("woff"),
+url("nexa-bold.otf") format("opentype"),
+}
+
+a {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #1ed4ed;
+}
+
+#content {
+  position:relative;
+  margin: 0 1.31% 0 4.31%;
+  display:block;
+  padding-bottom: 2.5rem;
+}
+
+#halfpage
+{
+  margin: 0px 0px 0px 0px;
+  padding: 20px 55px 0px 20px;
+  /* background: url('./index_files/bg.jpg'); */
+  background-position:top;
+  background-size: 100%;
+  /* background-color: rgba(200,200,200,0.49); */
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  z-index:20;
+}
+
+
+#page-container
+{
+  position: relative;
+  min-height: 100vh;
+}
+
+#callusbtn {
+  background-color: #395062;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 550;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: -1% 0 0 0;
+  outline: none;
+  padding: 5px 15px;
+  float:right;
+  width:20%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  transition: transform 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#callusbtn:hover,#callusbtn:focus {
+  -ms-transform: scale(0.95); /* IE 9 */
+  -webkit-transform: scale(0.95); /* Safari 3-8 */
+  transform: scale(0.95);
+  background-color: #5e84a1;
+}
+
+#rgisterbtn {
+  background-color: #1ed4ed;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 550;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: -1% 2% 0 5%;
+  outline: none;
+  padding: 5px 15px;
+  float:right;
+  width:20%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 100ms;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#rgisterbtn:hover,#rgisterbtn:focus {
+  -ms-transform: scale(0.95); /* IE 9 */
+  -webkit-transform: scale(0.95); /* Safari 3-8 */
+  transform: scale(0.95);
+  background-color: #89e9f5;
+}
+
+.registerbutton {
+  touch-action: manipulation;
+  user-select: none;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-appearance: button;
+    appearance: button;
+  border: none;
+  display: inline-block;
+  width:auto;
+  float:right;
+  margin-right:85%;
+  margin-top:-21.68%;
+  padding:6% 23% 5% 23%;
+  border-radius:7px;
+  background:#1ed4ed;
+  text-align: center;
+  text-decoration: none;
+  font-family:Nexa;
+  font-size:14px;
+  color: white;
+  cursor: pointer;
+  transition: transform .1s;
+  transition: color .3s;
+}
+
+.contactbutton {
+  touch-action: manipulation;
+  user-select: none;
+    -webkit-user-select: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  border: none;
+  display: inline-block;
+  width:auto;
+  float:right;
+  height:auto;
+  font-family:Nexa;
+  width:auto;
+  padding:5% 23% 5% 23%;
+  border-radius:7px;
+  font-size:14px;
+  background: #e0e0eb;
+  text-align: center;
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+  transition: color .3s;
+  transition: transform .1s;
+}
+
+.contactbutton:hover,.contactbutton:focus {
+  background-color: #5e84a1;
+  -ms-transform: scale(0.95); /* IE 9 */
+  -webkit-transform: scale(0.95); /* Safari 3-8 */
+  transform: scale(0.95);
+  color:white;
+}
+
+.registerbutton:hover,.registerbutton:focus {
+  -ms-transform: scale(0.95); /* IE 9 */
+  -webkit-transform: scale(0.95); /* Safari 3-8 */
+  transform: scale(0.95);
+  background-color: #89e9f5;
+}
+
+#supernavi
+{
+  margin: 0px 65px 0px 65px;
+}
+
+#navbar {
+  overflow: hidden;
+  z-index:20;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: 18px Nexa ;
+  line-height:50%;
+  font-weight:600;
+  cursor: pointer;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#navbar a.proactive {
+  color: #1ed4ed;
+  border-bottom-style: none;
+  padding-bottom:2%;
+}
+
+#navbar a:hover .navitxt {
+  border-bottom: 2px solid #1ed4ed;
+  padding-bottom:2%;
+}
+
+#navbar a:hover {
+  /*  color:#1ed4ed;  */
+}
+
+#hderlinks a.aactive
+{
+  color: #1ed4ed;
+  border-bottom-style: none;
+  padding-bottom:2%;
+}
+
+#hderlinks a:hover .naavitxt
+{
+  border-bottom: 2px solid #1ed4ed;
+  padding-bottom:2%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left:0%;
+  right:0%;
+  z-index:10;
+  left:0%;
+  background:#6c6c6c;
+  height:62px;
+  animation-name:slide-down;
+  animation-duration:0.7s;
+}
+
+@keyframes slide-down
+{
+  from{top:-58px;}
+  to{top:0px;}
+}
+
+@-webkit-keyframes slide-down
+{
+  from{top:-58px;}
+  to{top:0px;}
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  transition: 6.25s;
+}
+
+#footer0
+{
+  position: relative;
+  background:#2b2e33;
+  bottom: 0;
+  clear: both;
+  height:auto;
+  width:100%;
+}
+
+#footer0 a {
+  color:silver;
+}
+
+#footer0 a:hover {
+  color:#a1edf7;
+}

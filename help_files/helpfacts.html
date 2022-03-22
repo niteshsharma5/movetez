@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE></title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.helpcontents
+{
+  position:relative;
+  margin-left:1%;
+  float:left;
+  width:16%;
+  background:white;
+  opacity:0.9;
+  border:2px #f2f2f2 solid;
+  height:auto;
+  border-radius:9px;
+  padding:2.5% 0% 1.5% 2%;
+  overflow:hidden;
+}
+
+.helpcontents span
+{
+  position:relative;
+  clear:both;
+  display:block;
+  font-family:Noveo Sans;
+  font-weight:550;
+  font-size:14px;
+  display:box;
+  margin-top:8px;
+}
+
+.helpcontents a
+{
+  color:#395062;
+}
+
+.helpcontents a:hover
+{
+  color:#1ed4ed;
+}
+
+.helpcontents a.enbled
+{
+  color:#1ed4ed;
+}
+
+.helpcontents a
+{
+  text-decoration:none;
+}
+
+.helpfactz
+{
+  position:relative;
+  margin:0.21% 1% 0% 0%;
+  float:right;
+  width:79%;
+  height:600px;
+  border-style:none;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<BODY>
+
+<div class="helpcontents">
+<span><a onclick="enbler();" class="enbled" id="servicessec" href="./helpfacts_files/services.html" target="helpfactz">Services We Offer</a></span>
+<span><a onclick="enbler();" id="bookingsec" href="./helpfacts_files/booking.html" target="helpfactz">Booking</a></span>
+<span><a onclick="enbler();" id="registrationsec" href="./helpfacts_files/registration.html" target="helpfactz">Registration</a></span>
+<span><a onclick="enbler();" id="myaccountsec" href="./helpfacts_files/myaccount.html" target="helpfactz">My Account</a></span>
+<span><a onclick="enbler();" id="safetysec" href="./helpfacts_files/safety.html" target="helpfactz">Safety</a></span>
+<span><a onclick="enbler();" id="issuessec" href="./helpfacts_files/issues.html" target="helpfactz">Issues with driver</a></span>
+<span><a onclick="enbler();" id="paymentsec" href="./helpfacts_files/payment.html" target="helpfactz">Payments</a></span>
+<span><a onclick="enbler();" id="supportsec" href="./helpfacts_files/support.html" target="helpfactz">Support</a></span>
+<br>
+<br>
+</div>
+
+<iframe name="helpfactz" class="helpfactz" src="./helpfacts_files/services.html"></iframe>
+
+
+
+<script>
+function enbler()
+{
+  var eve = event.target;
+  $("a").removeClass("enbled");
+  $(eve).addClass("enbled");
+}
+</script>
+
+</body>
+</html>

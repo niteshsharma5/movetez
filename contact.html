@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>Welcome To MoveTez</title>
+<link rel="stylesheet" type="text/css" href="./common/styles.css">
+<link rel="stylesheet" type="text/css" href="./common/body.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.hwspic
+{
+  position:relative;
+  margin-left:0%;
+  float:left;
+  height:545px;
+  width:44%;
+  margin-top:-2.599%;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.hwstxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Times New Roman;
+  font-size:19px;
+  color:black;
+  float:right;
+  height:auto;
+  margin-top:1%;
+  width:44%;
+  padding:1%;
+  opacity:0.9;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.wawpic
+{
+  position:relative;
+  margin-left:0%;
+  margin-right:4%;
+  float:right;
+  height:554px;
+  width:44.5%;
+  margin-top:-8%;
+  border-radius:13px;
+  /* border-bottom-right-radius:13px; */
+}
+
+.wawtxt
+{
+  position:relative;
+  font-family:Times New Roman;
+  font-size:19px;
+  color:black;
+  float:left;
+  padding:1%;
+  opacity:0.89;
+  height:auto;
+  margin-top:0%;
+  width:41.399%;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+.wwvpic
+{
+  position:relative;
+  margin-left:0%;
+  float:left;
+  height:390px;
+  width:44%;
+  margin-top:-2%;
+  border-top-right-radius:13px;
+  border-bottom-left-radius:13px;
+}
+
+.wwvtxt
+{
+  position:relative;
+  margin-right:4%;
+  font-family:Times New Roman;
+  font-size:19px;
+  color:black;
+  float:right;
+  height:auto;
+  opacity:0.8;
+  margin-top:-1.5%;
+  width:43.399%;
+  border-top-left-radius:13px;
+  border-bottom-right-radius:13px;
+}
+
+#main-flex {
+  width:96.785%;
+  height: 400px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-direction: row;
+}
+
+#child-flexi1, #child-flexi2, #child-flexi3
+{
+  width:40%;
+  padding:8% 0 10% 13%;
+  cursor: pointer;
+}
+
+#child-flexi1:hover .zoomflexi1
+{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.4);
+}
+
+#child-flexi2:hover .zoomflexi2
+{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#child-flexi3:hover .zoomflexi3
+{
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.zoomflexi1
+{
+  transition: transform .3s;
+}
+
+.zoomflexi2
+{
+  transition: transform .3s;
+}
+
+.zoomflexi3
+{
+  transition: transform .3s;
+}
+
+</style>
+</head>
+<BODY link="black" alink="black" vlink="black">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+
+<!-- HALF PAGE START -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span alt="MoveTez" style="float:left;width:15%;height:97px;"><a href="index.html"><img src="./common/logo.png" align="top" width="100%" /></a></span>
+<span id="hderlinks" style="float:left;padding:1% 0 0 15%;width:70%;">
+<B><a href="about.html" style="font-family:Nexa;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">About </span>Us</a><a id="producthder" href="index.html#products-start" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Produc</span>ts</a><a id="pricinghder" href="index.html#pricing" style="font-family:Nexa;padding-left:10%;text-decoration:none;font-size:20px;" title=""><span class="naavitxt">Prici</span>ng</a></B>
+<button id="callusbtn" role="button" onclick="location.href='contact.html'" title="Contact Us">Contact</button><button id="rgisterbtn" onclick="location.href='register.html'" role="button" title="Register">Register</button></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<span style="float:left;margin-top:-0.8%;width:6%;height:52px;"><a href="index.html"><img alt="MoveTez" src="./common/logobg.png" align="top" width="100%" /></a>&ensp;&ensp;</span>
+<B><a href="about.html" style="text-decoration:none;" title="">&ensp;&ensp;<span class="navitxt">About </span>Us&ensp;&ensp;</a>
+<a id="productnaavbar" href="index.html#products-start" style="text-decoration:none;" title=""><span class="navitxt">Product</span>s&ensp;&ensp;</a>
+<a id="pricingnaavbar" href="index.html#pricing" style="text-decoration:none;" title=""><span class="navitxt">Pricin</span>g&ensp;&ensp;</a>
+<span style="float:right;margin-right:1%;">
+<button class="contactbutton" onclick="location.href='contact.html'" type="button">Contact</button>
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+&ensp;&ensp;
+<button class="registerbutton" onclick="location.href='register.html'" type="button">Register</button>
+</span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;font-family:Nexa;line-height:3.9rem;float:right;padding-top:5.23%;padding-bottom:10%;margin-top:2%;padding-left:2%;width:46%;right:-5%;font-size:4em;">
+<font color="#3B7CE4"><B>Reach</b></font><br>
+<font color="#3B7CE4"><B>Us Out!</b></font><br />
+<font color="black"><p style="font-size:2rem;line-height:39px;">MoveTez is revolutionizing transportation logistics,<br> contact us to help us<br> to help you.</p></font>
+<div style="font-size:21px;line-height:39px;margin-left:12%;">
+<UL>
+<LI>9828xxxxxx</LI>
+<LI>contactus@movetez.com</LI>
+<LI>Address</LI>
+</UL>
+</div>
+</div>
+<div style="position:relative;display:block;float:left;left:-2%;margin-top:-2%;width:47.13%;height:585px;">
+<img src="./contact_files/halfpage.png" height="100%" width="100%" />
+<br /><br />
+<!-- <img src="./contact_files/truck.jpg" id="movingdot" style="margin-left:10px;" height="90px" width="150px" />  -->
+</div>
+<!-- HEADER CONTENT END -->
+</div>
+<!-- HEADER END -->
+</div>
+<!-- HALF PAGE END -->
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+
+<br /><br /><br>
+<br /><br /><br>
+<br /><br /><br>
+<br /><br /><br>
+
+
+<!-- How we started START -->
+<div style="position:relative;display:box;width:100%;height:515px;clear:both;">
+<br /><br /><br>
+<img src="./contact_files/hwspic.png" class="hwspic" />
+<div class="hwstxt">
+<H1 class="hwsheading" align="right"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;"><B>Ou</span>r Mission</b></font></h3>
+<p align="justify" style="font-family:Nexa;font-size:2rem;position:relative;margin-top:5%;">
+Our mission is to provide hassle-free transportation services with industrial experts on board, making transport logistics more secure, safe and trustworthy.</p>
+</div>
+</div>
+<!-- How we started END -->
+
+
+<!-- Who are we START -->
+<div style="position:relative;display:box;width:100%;height:500px;clear:both;">
+<img src="./contact_files/wawpic.png" class="wawpic" />
+<div class="wawtxt">
+<H1 class="wawheading" align="left"><font face="Verdana" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Ou</span>r Vision</font></h3>
+<p align="justify" style="font-family:Nexa;font-size:1.45rem;position:relative;margin-top:5%;">
+Our vision is to provide on-tap logistics solutions for everyone, at any time. We aim to organize the unorganized logistic sector so that the user and our partners recieve a hassle-free service.</p>
+</div>
+</div>
+<!-- Who are we END -->
+
+
+<!-- What we value START -->
+<div style="position:relative;display:box;width:100%;height:425px;clear:both;">
+<img src="./contact_files/wwv.jpg" class="wwvpic" />
+<div class="wwvtxt">
+<H1 class="wwvheading" align="left"><font face="Arial" color="#395062"><span style="border-bottom:2px solid #1ed4ed;padding-bottom:2%;">Va</span>lues we value</font></h3>
+<p align="justify" style="font-family:Nexa;font-size:2rem;position:relative;margin-top:5%;">
+Our customers and our partners are at our top priority. We value them by providing all most all the possible services we can afford from the best of us. </p>
+</div>
+</div>
+<!-- What we value END -->
+
+
+<br><br>
+<br><br>
+<br><br>
+
+<!-- Statistics START -->
+<div style="position:relative;display:box;width:100%;height:425px;clear:both;">
+<br /><br /><br>
+<font size="5px">
+<table style="position:relative;width:100%;font-family:Nexa;">
+<tr>
+<td style="width:28%;"><center><img src="./contact_files/gear.png" width="98px" height="94px" align="top"><br><B>Hassfle-Free</B><p align="justify" style="font-size:15px;width:35%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center></td>
+<td style="margin-left:40%;width:48%;"><center><img src="./contact_files/gear.png" width="98px" height="94px" align="top"><br><B>Safety & Security</B><p align="justify" style="font-size:15px;width:20%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center>
+<td style="width:65%;margin-left:36%;"><center><br><img src="./contact_files/gear.png" width="98px" height="94px" align="top"><br><B>Facilitates Growth</B><p align="justify" style="font-size:15px;width:34%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center></td>
+</tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr><td> </td><td> </td><td> </td></tr>
+<tr>
+<td><center><img src="./contact_files/gear.png" width="98px" height="94px" align="middle"><br><B>Technology Driven</B><p align="justify" style="font-size:15px;width:40%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center></center></td>
+<td><center><img src="./contact_files/gear.png" width="98px" height="94px" align="middle"><br><B>Quick & Real Time</B><p align="justify" style="font-size:15px;width:21%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center></center></td>
+<td><center><img src="./contact_files/gear.png" width="98px" height="94px" align="middle"><br><B>Reliable</B><p align="justify" style="font-size:15px;width:44%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor fana jana</p></center></center></td>
+</tr>
+</table>
+</font>
+</div>
+<!-- Statistics END -->
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+<!-- Registration Section START -->
+<div style="position:relative;display:box;width:100%;height:515px;clear:both;">
+<br /><br /><br>
+<div id="main-flex">
+<div id="child-flexi1" onmouseover="bgchnger(1);" onmouseout="bgchnger(4);" style="background-color:black;color:#4297bf;"><div class="zoomflexi1"><img src="./contact_files/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Register as a</span><br><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;"> Vendor</span></FONT></center></div></div>
+<div id="child-flexi2" onmouseover="bgchnger(2);" onmouseout="bgchnger(5);" style="background-color:#4297bf;"><div class="zoomflexi2"><img src="./contact_files/gear-black.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Contact Us</span></FONT></center></div></div>
+<div id="child-flexi3" onmouseover="bgchnger(3);" onmouseout="bgchnger(6);" style="background-color:black;color:#4297bf"><div class="zoomflexi3"><img src="./contact_files/gear.png" width="98px" height="94px" align="middle"><br><br><center><span style="margin-left:-53%;width:auto;font-family:Nexa;font-size:2em;">Register as a</span><br><span style="margin-left:-53%;width:50%;font-family:Arial;font-size:1.5em;"> &ensp;<B>Delivery Partner</b></span></FONT></center></div></div>
+</div>
+</div>
+<!-- Registration Section END -->
+
+</div>
+<!-- CONTENT END -->
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br>
+<div style="position:relative;width:26.01%;margin-left:2%;float:left;padding:10px;font-family:Nexa;">
+<div style="border-right:1px groove #70a9b6;">
+<div title="MoveTez" style="float:left;width:80.897%;height:auto;"><a href="index.html"><img src="./common/logod.png" align="top" width="100%" /></a></div>
+<div style="position:relative;font-size:18px;clear:both;margin-left:4%;"><br />Safe Chalega, Tez Bhadega</div>
+<div style="position:relative;clear:both;float:left;left:22.01%;"><br />
+<div style="display:flex;flex-direction:row;">
+<div style="background-color:#1ed4ed;width:25px;height:25px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+<div style="background-color:#1ed4ed;width:25px;height:25px;margin-left:11px;"></div>
+</div>
+</div>
+<div style="position:relative;font-size:13px;clear:both;color:white;margin-left:3.5%;"><br /><br /><br />
+<br />
+</div>
+</div>
+</div>
+
+<div style="position:relative;width:63%;float:left;margin-left:5.65%;padding:0px;font-family:Nexa;">
+<div style="position:relative;float:left;width:17.945%;">
+<h3>Company</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="about.html">About Us</a><br>
+<a style="text-decoration:none;" href="index.html#pricing">Pricing</a><br>
+<a style="text-decoration:none;" href="">O<font face="arial" size="3em">ff</font>ers</a><br></div>
+</div>
+<div style="position:relative;left:2%;float:left;width:25%;">
+<h3>Service</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="./register/vendor.html">Vendors<br>
+<a style="text-decoration:none;" href="./register/driver.html">Drivers<br>
+<a style="text-decoration:none;" href="movnpack.html">Movers & Packers</a><br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Resources</h3>
+<div style="padding-left:6%;">
+<a style="text-decoration:none;" href="blog.html">Blog</a><br><br>
+<img src="./common/briefcase.png" width="33px" height="30px" align="top" />&ensp;<a style="text-decoration:none;" href="hiring.html">Hiring</a><br></div>
+</div>
+<div style="position:relative;margin-right:8.439%;margin-top:-3.9567%;float:right;width:24.28%;">
+<span title="Download for Android" style="width:100%;height:auto;"><a href=""><img src="./common/appicoo.png" align="top" width="100%" /></a></span>
+</div>
+</div>
+
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br>
+</div>
+
+<div style="position:relative;display:block;clear:both;width:100%;background:#2b2e33;height:auto;">
+<span style="position:relative;font-size:16px;float:left;color:white;margin-left:3.5%;">
+<a href="./privacy.html" style="text-decoration:none;"><font color="white">Privacy Policy</font></a>&ensp;&ensp;<a href="./tos.html" style="text-decoration:none;"><font color="white">Terms of Service</font></a>
+</span>
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+<span style="position:relative;font-size:16px;float:right;margin-top:-1.5%;margin-right:3%;color:white;">
+<a href="./sitemap.php" style="text-decoration:none;"><font color="white">Sitemap</font></a>
+</span>
+<br />
+</div>
+</div>
+<!-- THE FOOTER END -->
+
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+<script type="text/javascript" src="./common/script.js"></script>
+<script>
+function bgchnger(x)
+{
+  if(x == 1)
+  {
+    document.getElementById("child-flexi1").style.background = "#666666";
+  }
+  else if(x == 2)
+  {
+    document.getElementById("child-flexi2").style.background = "#7ab6d1";
+  }
+  else if(x == 3)
+  {
+    document.getElementById("child-flexi3").style.background = "#666666";
+  }
+  else if(x == 4)
+  {
+    document.getElementById("child-flexi1").style.background = "#000000";
+  }
+  else if(x == 5)
+  {
+    document.getElementById("child-flexi2").style.background = "#4297bf";
+  }
+  else if(x == 6)
+  {
+    document.getElementById("child-flexi3").style.background = "#000000";
+  }
+}
+</script>
+
+</body>
+</html>

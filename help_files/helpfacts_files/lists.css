@@ -1,0 +1,23 @@
+body
+{
+  font-family: "Helvetica", "Times New Roman", "Georgia";
+  font-size: 14px;
+}
+
+#content {
+  margin:0 1% 0 1%;
+}
+
+.coll {
+  background-color: #395062;
+  color: white;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+}
+
+.active, .coll:hover {
+  background-color: #1ed4ed;
+  color:white;
+}

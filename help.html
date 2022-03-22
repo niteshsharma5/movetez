@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META charset="UTF-8">
+<META name="viewport" content= "width=device-width, user-scalable=no" initial-scale="1">
+<TITLE>Welcome To MoveTez</title>
+<link rel="stylesheet" type="text/css" href="./common/styles.css">
+<link rel="stylesheet" type="text/css" href="./common/body.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+#halfpage
+{
+  margin: 0px 0px 0px 0px;
+  padding: 20px 55px 0px 20px;
+  background: url('./help_files/bg.jpeg');
+  background-position:top;
+  background-size: 100%;
+  background-color: rgba(14,15,19,0.9);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+#search-box
+{
+  left:18%;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+#input-search
+{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #395059;
+  padding-right: 40px;
+  color:#fff;
+}
+
+#input-search::placeholder
+{
+  color:grey;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  z-index:10;
+}
+
+#btn-search
+{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+
+#btn-search:hover
+{
+  background-color:transparent;
+  color:#1ed4ed;
+  transform: scale(1.1,1.1);
+}
+
+#btn-search:focus ~ #input-search
+{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+#input-search:focus
+{
+  width: 400px;
+  border-radius: 0px;
+  background-color: silver;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  border-radius: 25px;
+}
+
+#helpbar {
+  overflow: hidden;
+}
+
+#helpbar a {
+  text-decoration:none;
+  font-size:18px;
+  padding:2% 14% 4% 14%;
+  height:50px;
+  line-height:40px;
+  /* border-top-left-radius:1.5rem; */
+  /* border-top-right-radius:1.5rem; */
+}
+
+#helpbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#helpbar a.activa {
+  background-color: #1ed4ed;
+  color: white;
+}
+
+.helpframe
+{
+  position:relative;
+  width:100%;
+  height:670px;
+  display:block;
+  border-style:none;
+  margin:3px 0 0 0;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<BODY link="white" alink="white" vlink="white">
+
+<!-- PAGE-CONTAINER START -->
+<div id="page-container">
+
+<!-- HALF PAGE START -->
+<div id="halfpage">
+<!-- HEADER START -->
+<div class="header">
+<span style="float:left;"><img src="./common/logo.png" align="middle" width="256px" height="75px" /></span>
+<span id="hderlinks" style="float:right;">
+<B><a href="./register/delivery-partner.html" style="text-decoration:none;" title=""><span class="naavitxt">Register As Deliv</span>ery Partner</a>&ensp;&ensp;&ensp;&ensp;<a href="./register/enterprise-partner.html" style="text-decoration:none;" title=""><span class="naavitxt">Outlet Re</span>gistration</a></B>&ensp;&ensp;
+<button id="trackbtn" role="button" title="">Track Your Order</button>&ensp;&ensp;&ensp;&ensp;
+<img src="./common/appico.png" align="top" title="Get It On Google Play" alt="Get It On Google Play" width="44px" height="36px" /></span>
+<!-- HIDDEN STICKY NAVBAR START -->
+<div id="supernavi">
+<div id="navbar">
+<div id="naavbar" style="display:none;padding:10px;">
+<B><a href="./register/delivery-partner.html" style="text-decoration:none;" title=""><span class="navitxt">Register As Delivery Part</span>ner</a>
+<a href="./register/enterprise-partner.html" style="text-decoration:none;" title=""><span class="navitxt">Outlet Registra</span>tion</a>
+<a href="careers.html" style="text-decoration:none;" title=""><span class="navitxt">Care</span>ers</a>
+<a class="active" href="" style="text-decoration:none;" title=""><span class="navitxt">Hel</span>p</a></B>
+<span style="float:right;">
+<button id="trackbtn" role="button" title="">Track Your Order</button>&ensp;&ensp;&ensp;&ensp;
+<img src="./common/appico.png" align="top" title="Get It On Google Play" alt="Get It On Google Play" width="44px" height="36px" /></span>
+</div>
+</div>
+</div>
+<!-- HIDDEN STICKY NAVBAR END -->
+<!-- HEADER CONTENT START -->
+<div style="position:relative;display:block;clear:left;padding-top:6.23%;padding-bottom:10%;padding-left:2%;width:65%;left:21%;">
+<font size="66" color="#d9e6f2"><B>Hello! What are you looking for ?</b></font>
+<p style="width:74.8%;font-family:Arial;color:white;line-height:26px;font-size:17px;">
+<br /><br />
+<div id="search-box" style="float:left;">
+<button id="btn-search"><span class="fas fa-search"></span></button>
+<input type="text" id="input-search" placeholder="Type to Search..." />
+</div>
+<div id="srchtxt" style="margin:1.5% 0 0 23%;float:left;font-size:18px;font-weight:550;color:white;">Click the icon to search</div>
+</p>
+</div>
+<!-- HEADER CONTENT END -->
+<center>
+<div id="helpbar" style="position:relative;display:block;clear:both;margin-bottom:0%;">
+<B><a class="activa" href="./help_files/helpfacts.html" title="Help" target="helpframe" onclick="activachnge();">Help&ensp;&ensp;</a>
+<a class="faqu" href="./help_files/faq.html" title="FAQs" target="helpframe" onclick="activachnge();">FAQs</a></B>
+</div>
+</center>
+</div>
+<!-- HEADER END -->
+</div>
+<!-- HALF PAGE END -->
+
+
+<!-- CONTENT START -->
+<div id="content">
+<!-- WARNING DONT DISTURB THE HALF-PAGE-CONTENT NAVBAR PAGE-CONTAINER DIV -->
+
+<!-- Help Section Start -->
+<div style="position:relative;display:box;width:104%;clear:both;margin-left:-4%;">
+
+<iframe name="helpframe" scrolling="no" frameborder="0" src="./help_files/helpfacts.html" class="helpframe"></iframe>
+
+</div>
+<!-- Help Section END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- CONTENT END -->
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
+<!-- THE FOOTER -->
+<div id="footer0" class="container-fluid" style="color:silver;">
+<br><div style="position:relative;width:100%;clear:both;padding:0px;font-family:Noveo Sans;">
+<div style="position:relative;left:2%;float:left;width:15%;">
+<h3>Cities We Serve</h3>
+<div style="padding-left:6%;">Jaipur<br>
+Mumbai<br>
+Kolkata<br>
+New Delhi<br>
+Mumbai<br>
+Kolkata<br></div>
+</div>
+<div style="position:relative;margin-left:2%;float:left;width:15%;">
+<h3>Vehicles We Offer</h3>
+<div style="padding-left:6%;">Auto<br>
+Tata Ace<br>
+XUV 300<br>
+Audi R8<br>
+Activa 5g<br>
+Hero Honda Splender<br>
+SUV 300<br>
+Pulser<br>
+Passion Plus<br>
+Nano<br>
+Ambassador<br></div>
+</div>
+<div style="position:relative;left:6%;float:left;width:15%;">
+<h3><U>Social Links</u></h3>
+<div style="padding-left:4%;padding-top:11%;"><table>
+<tr style="line-height:30px;">
+<td width="60%"><img src="./common/insta.png" width="45px" height="44px" /></td>
+<td><img src="./common/ytb.png" width="45px" height="43px" /></td>
+</tr>
+<tr>
+<td><img src="./common/twitter.png" width="45px" height="45px" /></td>
+<td><img src="./common/fb.png" width="45px" height="45px" /></td>
+</tr>
+</table></div>
+</div>
+<div style="position:relative;margin-left:12%;float:left;width:auto">
+<h3><U>Learn Movetez</U></h3>
+</div>
+<div style="position:relative;margin-top:2%;margin-left:3.5%;float:left;">
+<a href="about.html">About Movetez</a><br>
+Contact Us<br>
+Help<br>
+Registration<br>
+Track my order<br>
+Careers<br>
+FAQs<br>
+Offers<br>
+Become a driver<br>
+Register For Outlet<br>
+</div>
+<div style="position:relative;margin-top:2%;margin-left:4.39%;float:left;">
+Media Center<br>
+Notices<br>
+Terms And Conditions<br>
+Privacy Policy<br>
+</div>
+<div style="position:relative;left:10%;width:40%;float:left;">
+<br><br><br><br><br><br><br>
+</div>
+<div style="position:relative;display:block;clear:both;width:100%;background:#595959;height:auto;">
+<center><font size="3px">Copyright &copy; 2021-22 All Rights Reserved.</font><center>
+</div>
+</div>
+<!-- THE FOOTER END -->
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+<script type="text/javascript" src="./common/script.js"></script>
+<script>
+var bttn = document.getElementById("search-box");
+var btton = document.getElementById("input-search");
+
+bttn.onclick = function() {
+  $('#srchtxt').fadeOut();
+}
+
+window.onclick = function(event) {
+  if (event.target != bttn && event.target != btton)
+  {
+    $('#srchtxt').fadeIn();
+  }
+}
+</script>
+<script>
+// function to change active a tag of helpbar div
+function activachnge()
+{
+  var tar = event.target;
+  $("a").removeClass("activa");
+  $(tar).addClass("activa");
+}
+</script>
+<script>
+
+function activachngee()
+{
+  $("a").removeClass("activa");
+  $("a.faqu").addClass("activa");
+}
+
+</script>
+
+
+</body>
+</html>

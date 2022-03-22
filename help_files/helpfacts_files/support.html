@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE></title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<style>
+
+.sbmit
+{
+  position: relative;
+  background-color: #6feda0;
+  border-radius: 8px;
+  border-style: none;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "sans-serif";
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 10px;
+  list-style: none;
+  margin-top:16px;
+  padding: 3%;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  width:93%;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sbmit:hover,.sbmit:focus {
+  background-color: #b4edca;
+}
+
+#supportform
+{
+  position:relative;
+  padding:3%;
+  border-radius:15px;
+  background:#f2f2f2;
+  display:block;
+  opacity:0.99999;
+  z-index:10;
+  width:45%;
+  margin:0% 28.69% 3% 20.69%;
+  animation: createBox .25s;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+</style>
+
+</head>
+<BODY>
+<div id="page-container">
+
+<!-- THE CONTENT -->
+<div id="content">
+<br>
+
+<H1 style="padding-left:4%;">Support</h1>
+<p style="padding-left:4%;padding-right:4%;">For having any complaints, you can raise a ticket by filling the forum below.</p>
+<br>
+<!-- Support Forum START -->
+<div style="position:relative;display:box;width:100%;height:515px;clear:both;">
+<form action="supporter.php" method="GET" name="supportform" id="supportform">
+<fieldset>
+<label>Enter full name</label>
+<input type="text" name="fullname" placeholder="Your Full Name Here" style="position:relative;margin-top:1px;width:93%;line-height:3px;padding:2%;font-family:Times New Roman;background:#f9f9f9;font-size:15px;color:black;border:1px solid grey;" />
+</fieldset>
+<br>
+<fieldset>
+<label>Enter contact number</label>
+<input type="text" name="mobileno" onclick="alert('Mention your registered mobile number (if possible)');" placeholder="Your Mobile Number Here" style="position:relative;margin-top:1px;width:93%;line-height:3px;padding:2%;font-family:Times New Roman;background:#f9f9f9;font-size:15px;color:black;border:1px solid grey;" />
+</fieldset>
+<br>
+&ensp;Enter your complaint here:
+<br>
+<textarea onclick="alert('Mention all the possible information with your complaint/issue in this textarea');" name="complaint" style="position:relative;width:93%;line-height:18px;padding:2%;border-radius:7px;font-family:Times New Roman;font-size:15px;color:black;background:#f9f9f9;border:1px solid grey;" rows="5"></textarea>
+<br><br>
+<input type="submit" class="sbmit" value="Raise a Ticket" />
+</form>
+</div>
+<!-- Support Forum END -->
+
+<BR><BR>
+
+</div>
+<!-- THE CONTENT END -->
+
+</div>
+<!-- END OF PAGE-CONTAINER -->
+
+</body>
+</html>
